@@ -51,7 +51,7 @@ fT= [0+c1(1);0+c2(1);0+c3(2);0+c1(2);5+c3(1);0+c2(2)] %Global force vector
 
 f= [fT(3);fT(5)];  
 k= [Kg(3,3) Kg(3,5);Kg(5,3) Kg(5,5)];
-u= k\f
+u= f/k
 
 Ug = [0;0;u(1);0;u(2);0] % Global Displacement vector
 Fg = Kg*Ug;
